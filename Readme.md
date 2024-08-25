@@ -1,6 +1,6 @@
 ## SQUIMA: Gestion intelligente des quiz
 
-[![SQUIMA Logo](https://github.com/RTI-Tech/SQUIMA/blob/main/assets/photo.jpg)](https://github.com/RTI-Tech/SQUIMA/blob/main/assets/photo.jpg)
+[![SQUIMA Logo](https://github.com/RTI-Tech/SQUIMA/blob/main/screenshot/Screenshot_20240823-064236.jpg)](https://github.com/RTI-Tech/SQUIMA/blob/main/assets/photo.jpg)
 
 **SQUIMA** (Smart Quiz Managing) est une application multiplateforme révolutionnant la manière dont les évaluations sont conçues, administrées et corrigées. En s'attaquant aux limitations des solutions existantes, SQUIMA offre une expérience intuitive et puissante pour tous les acteurs de l'éducation, des enseignants aux étudiants en passant par les institutions.
 
