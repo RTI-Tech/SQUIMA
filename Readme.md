@@ -16,7 +16,7 @@
 
 **Avantages et Fonctionnalités par acteur:**
 
-**Enseignants:**
+**Professeurs:**
 
 * **Création d'évaluations personnalisées:**
     * Choix parmi différents types de questions (choix multiples, questions ouvertes, questions à développement, rédaction, exercices pratiques, etc.)
@@ -47,8 +47,7 @@
 * **Gestion de classe et des notes:**
     * Suivre les progrès des élèves et gérer les notes de manière centralisée.
     *  Gérer les absences et les retards, en envoyant des notifications aux parents et aux élèves.
-    * Communiquer avec les parents via l'application, en leur fournissant des informations sur les performances de leurs enfants, les évaluations à venir et les événements importants.
-
+    
 **Étudiants:**
 
 * **Accès aux évaluations:**
@@ -66,7 +65,7 @@
     * Identifier les domaines à améliorer et se concentrer sur les sujets les plus difficiles.
     * Suivre les progrès des autres élèves et se comparer à leurs performances.
 
-**Institutions éducatives:**
+**Administrateur:**
 
 * **Gestion centralisée des évaluations:**
     * Créer et gérer des banques de questions, en partageant des ressources d'évaluation entre les enseignants et les établissements.
@@ -87,6 +86,8 @@
 
 * **Python:** Langage de programmation principal pour le développement de l'application, choisi pour sa polyvalence, sa puissance et sa large communauté.
 
+* **Flet:** Framework Python moderne pour créer des applications web et desktop de manière simple et efficace. Flet permet de créer des interfaces utilisateur interactives et attractives, d'intégrer des fonctionnalités de base de données et de gérer les données de manière efficace.
+  
 * **SQLAlchemy:**  ORM puissant pour la manipulation des données dans la base de données, permettant de gérer les données de manière efficace et de les interroger facilement.
 
 * **SQLite:**  Système de gestion de base de données relationnelle léger et intégré à l'application pour un stockage et une gestion des données optimisés. 
