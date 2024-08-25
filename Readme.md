@@ -86,7 +86,9 @@
 **Technologies:**
 
 * **Python:** Langage de programmation principal pour le développement de l'application, choisi pour sa polyvalence, sa puissance et sa large communauté.
+
 * **SQLAlchemy:**  ORM puissant pour la manipulation des données dans la base de données, permettant de gérer les données de manière efficace et de les interroger facilement.
+
 * **SQLite:**  Système de gestion de base de données relationnelle léger et intégré à l'application pour un stockage et une gestion des données optimisés. 
 
 **Installation:**
@@ -124,4 +126,3 @@ Les contributions au développement de SQUIMA sont les bienvenues ! N'hésitez p
 Pour toute question ou suggestion, n'hésitez pas à contacter:
 
 * **Email:** rti.tech.goma@gmail.com
-* es avantages concurrentiels:**  Expliquez clairement pourquoi SQUIMA est une meilleure solution que les autres applications de gestion de quiz, en mettant en avant les fonctionnalités uniques et les avantages qu'offre SQUIMA. 
