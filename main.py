@@ -383,7 +383,7 @@ def main(page: Page):
             alignment=MainAxisAlignment.CENTER,
             vertical_alignment=CrossAxisAlignment.CENTER,
             run_spacing=0,
-            visible=not page.width > 800
+            #visible=not page.width > 800
         ),
         
         Row(
@@ -458,9 +458,9 @@ def main(page: Page):
                                             padding=padding.symmetric(2),
                                             ink=True,
                                             bgcolor=colors.INVERSE_PRIMARY if i != page.page_index else None,
-                                            border_radius=border_radius.only(20, 10 if i==page.page_index+1 else 0, 20, 10 if i==page_index-1 else 0),
+                                            border_radius=border_radius.only(20, 10 if i==page.page_index+1 else 0, 20, 10 if i==page.page_index-1 else 0),
                                             ink_color=colors.PRIMARY_CONTAINER,
-                                            on_click=None if not text.strip() else lambda e: pages.controls[page.page_index-1].content.__setattr__("border_radius", border_radius.horizontal(20)) or pages.controls[page.page_index+1].content.__setattr__("border_radius", border_radius.horizontal(20)) or pages.controls[page.page_index].content.__setattr__("bgcolor", colors.INVERSE_PRIMARY) or pages.controls[page.page_index].content.content.controls[0].__setattr__("selected", False) or page.__setattr__("page_index", [i for i, c in enumerate(pages.controls) if c.content == e.control][0]) or ages.controls[page.page_index+1].content.__setattr__("border_radius", border_radius.only(20, 10, 20)) or pages.controls[page.page_index-1].content.__setattr__("border_radius", border_radius.only(20, 0, 20, 10)) or e.control.__setattr__("bgcolor", colors.ON_INVERSE_SURFACE) or e.control.content.controls[0].__setattr__("selected", True) or page.update(),
+                                            on_click=None if not text.strip() else lambda e: pages.controls[page.page_index-1].content.__setattr__("border_radius", border_radius.horizontal(20)) or pages.controls[page.page_index+1].content.__setattr__("border_radius", border_radius.horizontal(20)) or pages.controls[page.page_index].content.__setattr__("bgcolor", colors.INVERSE_PRIMARY) or pages.controls[page.page_index].content.content.controls[0].__setattr__("selected", False) or page.__setattr__("page_index", [i for i, c in enumerate(pages.controls) if c.content == e.control][0]) or pages.controls[page.page_index+1].content.__setattr__("border_radius", border_radius.only(20, 10, 20)) or pages.controls[page.page_index-1].content.__setattr__("border_radius", border_radius.only(20, 0, 20, 10)) or e.control.__setattr__("bgcolor", colors.ON_INVERSE_SURFACE) or e.control.content.controls[0].__setattr__("selected", True) or page.update(),
                                             on_hover=None if not text.strip() else lambda e: hasattr(e.control.content.controls[0], "selected") and e.control.content.controls[0].selected or e.control.__setattr__("bgcolor", colors.SECONDARY_CONTAINER if e.data == "true" else colors.INVERSE_PRIMARY) or e.control.update()
                                         ),
                                         bgcolor=colors.ON_INVERSE_SURFACE,
@@ -620,7 +620,7 @@ def main(page: Page):
             ],
             expand=True,
             spacing=15,
-            visible=page.width > 800
+            visible=False#page.width > 800
         )
     )
     
@@ -633,11 +633,10 @@ def connection_button_click(page: Page, matricule_input: TextField, password_inp
     else:
         error_text.value = "Informations incorrectes" if matricule_input.value and password_input.value else "Complétez tous les champs" if not matricule_input.value and not password_input.value else f"Entrez votre {matricule_input.label.lower()}" if not matricule_input.value else "Entrez le mot de passe"
         
-        matricule_input.border_color = password_input.border_color = colors.ERROR if matricule_input.value and password_input.value or not matricule_input.value and not password_input.value else colors.OUTLINE_VARIANT
-        
         matricule_input.border_color = colors.OUTLINE_VARIANT if matricule_input.value else colors.ERROR
         password_input.border_color = colors.OUTLINE_VARIANT if password_input.value else colors.ERROR
         
+        if matricule_input.value and password_input.value or not matricule_input.value and not password_input.value: matricule_input.border_color = password_input.border_color = colors.ERROR
         
     error_text.visible = True
     page.update()
