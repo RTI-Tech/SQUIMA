@@ -16,12 +16,12 @@
   ],
   "routes": [
     {
-      "src": "static\(.*)",
-      "dest": "static\$1"
+      "src": "static/(.*)",
+      "dest": "static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "squima/main.py
+      "dest": "squima/main.py"
     }
   ]
 }
