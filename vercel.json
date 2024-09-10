@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": flet --w --host 0.0.0.0 --p 80,
-      "use": @vercel/python,
+      "src": "flet --w --host 0.0.0.0 --p 80",
+      "use": "@vercel/python",
       "config": {"maxLambdaSize": 15mb, "runtime": "python3.11"}
     }
   ]
