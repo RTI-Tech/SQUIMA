@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "flet --w --host 0.0.0.0 --p 80",
+      "src": "squima/main.py",
       "use": "@vercel/python",
-      "config": {"maxLambdaSize": "15mb", "runtime": "python3.11"}
+      "config": {"maxLambdaSize": "15mb", "runtime": "python3.9"}
     },
     {
       "src": "bluild_files.sh",
